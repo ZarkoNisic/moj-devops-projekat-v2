@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Project Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans min-h-screen flex flex-col justify-between">
+    <header class="border-b border-gray-800 bg-gray-950 p-5 shadow-md">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-bold text-emerald-400 tracking-wider">🚀 DEVOPS LAB // PROD</h1>
+            <span class="bg-emerald-500/10 text-emerald-400 text-xs px-3 py-1 rounded-full border border-emerald-500/20 font-mono animate-pulse">
+                ● SYSTEM ONLINE
+            </span>
+        </div>
+    </header>
+    <main class="max-w-6xl w-full mx-auto p-6 flex-grow flex flex-col justify-center">
+        <div class="text-center mb-10">
+            <h2 class="text-4xl font-extrabold text-white mb-2">Zdravo iz DevOps svijeta!</h2>
+            <p class="text-gray-400 text-lg">Tvoja aplikacija uspješno radi unutar izolovanog okruženja.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 font-mono">
+            <div class="bg-gray-950 p-6 rounded-xl border border-gray-800 shadow-lg">
+                <div class="text-gray-500 text-xs mb-1">OKRUŽENJE</div>
+                <div class="text-2xl font-bold text-blue-400">Docker Container</div>
+                <div class="text-xs text-gray-400 mt-2">OS: Linux (Debian Slim)</div>
+            </div>
+            <div class="bg-gray-950 p-6 rounded-xl border border-gray-800 shadow-lg">
+                <div class="text-gray-500 text-xs mb-1">LOKACIJA SERVERA</div>
+                <div class="text-2xl font-bold text-purple-400">Localhost : 5000</div>
+                <div class="text-xs text-gray-400 mt-2">Status: Sluša na 0.0.0.0</div>
+            </div>
+            <div class="bg-gray-950 p-6 rounded-xl border border-gray-800 shadow-lg">
+                <div class="text-gray-500 text-xs mb-1">BAZA PODATAKA</div>
+                <div class="text-2xl font-bold text-amber-400">T-SQL (Na čekanju)</div>
+                <div class="text-xs text-gray-400 mt-2">Status: Spreman za Korak 6</div>
+            </div>
+        </div>
+    </main>
+    <footer class="border-t border-gray-800 p-4 text-center text-xs text-gray-500 font-mono">
+        DevOps Putanja // Izgrađeno sa Flaskom i Dockerom
+    </footer>
+</body>
+</html>
