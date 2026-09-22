@@ -1,0 +1,28 @@
+
+services:
+  db:
+    image: postgres:15-alpine
+    container_name: postgres_db
+    restart: always
+    environment:
+      POSTGRES_USER: moj_korisnik
+      POSTGRES_PASSWORD: moja_lozinka
+      POSTGRES_DB: moja_baza
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  web:
+    build: .
+    container_name: devops-kontejner
+    restart: always
+    ports:
+      - "5000:5000"
+    environment:
+      - DATABASE_URL=postgresql://moj_korisnik:moja_lozinka@db:5432/moja_baza
+    depends_on:
+      - db
+
+volumes:
+  postgres_data:
